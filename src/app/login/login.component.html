@@ -1,0 +1,66 @@
+<div class="body" >
+   
+    <div class="divHead">
+        <div class="backgroundLogin">
+
+        </div>
+        
+        <div class="header-login">
+            <button id="logoAmbev"></button>
+            <a id="a-duvidas">Dúvidas</a>
+            <a id="a-contato">Contato</a>
+        </div>
+        
+    </div>
+
+    <div class="body-login" >
+
+
+        <div class="box-login"  [@optionsMaxMin]="option6 ? 'open' : 'closed'"  (click)="option6=true"  (focusout)="option6=false" >
+
+            <div class="linha-box-logo">
+
+            </div>
+
+            <div class="linha-box">
+                <div class="box-lbl-linha">
+                    
+                </div>
+                <div class="box-input-linha">
+                    
+                    <input type="text" class="input-linha" id="input-email" placeholder="Email ou telefone">
+                </div>
+            </div>
+
+            <div class="linha-box">
+                <div class="box-lbl-linha">
+                    
+                </div>
+                <div class="box-input-linha">
+                    
+                    <input type="password" class="input-linha" id="input-senha" placeholder="Senha">
+                </div>
+            </div>
+
+            <div class="linha-box-buttons">
+                <div class="linha-buttons">
+                    <div class="lbm-box">
+                        <div class="divCheckbox"><input type="checkbox" class="checkboxLbm"></div>
+                        <div class="div-lbl-Checkbox"><label id="lbl-lbm">Lembrar de min</label></div>
+                    </div>
+
+                    <div class="senha-box">
+                        <div><a id="a-ess">Esqueceu sua senha?</a></div>
+                    </div>
+                </div>
+                <div class="linha-buttons">
+
+                    <button class="btnEntrar" [ngStyle]="{backgroundColor: btnUser==true  ? 'rgb(47, 78, 177)' : 'rgba(23,24,32,0.8)' }" (mouseover)="btnUser=true" (mouseleave)="btnUser=false">Entrar</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

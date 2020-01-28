@@ -1,0 +1,94 @@
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 250, 250, 0.801);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+.container{
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    margin: auto;
+    border-radius: 8px;
+    display: flexbox;
+    -webkit-box-shadow: 2px 2px 8px #999; 
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 2px 2px 8px #999;  
+
+}
+.body .container .box-text{
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    
+    
+    font-size: 3vh ;
+    
+    
+}
+
+.body .container .box-buttons{
+
+    height: 20%;
+    width: 100%;
+    display: flex;
+    
+}
+.body .container .box-buttons .box-btn-cancelar{
+    height: 100%;
+    width: 47.5%;
+    margin: auto;
+}
+.body .container .box-buttons .box-btn-excluir{
+    height: 100%;
+    width: 47.5%;
+    margin: auto;
+}
+.body .container .box-buttons .box-btn-excluir .btnExcluir{
+    background-color: rgba(207, 55, 55, 0.747);
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    background-color: rgba(236, 94, 84, 0);;
+    background-position: 85%;
+    font-size: 3vh;
+    font:bold 3vh 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    border: solid 0.5px rgba(236, 94, 84, 0.39);
+    -webkit-box-shadow: 2px 2px 8px rgba(236, 94, 84, 0.39);
+    -moz-box-shadow: 2px 2px 8px rgba(236, 94, 84, 0.39);
+    box-shadow: 2px 2px 8px rgba(236, 94, 84, 0.39);  
+    border-radius: 5px;
+}
+.body .container .box-buttons .box-btn-cancelar .btnCancelar{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0);
+    
+    font:bold 3vh 'Montserrat', sans-serif;
+    border: solid 0.5px rgba(153, 153, 153, 0.39);;
+    -webkit-box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.39);
+    -moz-box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.39);
+    box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.39);  
+    border-radius: 5px;
+    
+    
+    
+}
+
+.text-box{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+}
+.lbl-text{
+    margin: auto;
+    
+}
+#iconTrash{
+    background-image: url(/assets/img/iconTrash.png);
+}

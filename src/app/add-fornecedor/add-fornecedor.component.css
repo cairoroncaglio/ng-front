@@ -1,0 +1,147 @@
+.body{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(19, 18, 12, 0.575);
+    
+}
+.lbl-title{
+    text-align: center;
+    font-size: 4vh;
+}
+.linha-box-title{
+    margin: auto;
+    margin-top: 2%;
+    width: 90%;
+    height: 10%;
+    display: flex;
+
+}
+
+.body .container{
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    
+}
+.body .container .box-add-fornecedor{
+    margin: auto;
+    
+    width: 90%;
+    height: 90%;
+    display: flexbox;
+    
+    -webkit-box-shadow: 2px 2px 8px #999; 
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 2px 2px 8px #999;
+    
+}
+.body .container .box-add-fornecedor .linha-box{
+    margin: auto;
+    margin-top: 1%;
+    width: 90%;
+    height: 15%;
+    display: flex;
+      
+}
+
+.body .container .box-add-fornecedor .linha-box .box-option{
+    
+    height: 100%;
+    display: flexbox;
+    
+
+}
+.body .container .box-add-fornecedor .linha-box .box-option .box-lbl-option{
+    display: flex;
+    
+    width: 100%;
+    height: 40%;
+    
+
+}
+.body .container .box-add-fornecedor .linha-box .box-option .box-lbl-option .lbl-option{
+    margin-left: 1%;
+    margin-top: 2%;
+    font-weight: 500;
+    color: rgb(38, 37, 85);
+    font-size: 2vh;
+}
+.body .container .box-add-fornecedor .linha-box .box-option  .box-input-option{
+    display: flex;
+    
+    width: 100%;
+    height: 50%;
+}
+
+.body .container .box-add-fornecedor .linha-box .box-option  .box-input-option .input-option{
+    border: none;
+    margin: auto;
+    width: 100%;
+    height: 70%;
+    padding-left: 2%;
+    font-size: 2vh;
+    color: rgb(58, 58, 58);
+    -webkit-box-shadow: 2px 2px 8px #999; 
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 2px 2px 8px #999;  
+
+}
+
+
+.body .container .box-add-fornecedor .linha-box .box-buttons{
+    width: 25%;
+    height: 100%;
+    margin: auto;
+
+
+}
+.body .container .box-add-fornecedor .linha-box .box-buttons .btnCadastro{
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+    font-size: 2.5vh;
+    border:none!important;    
+    -webkit-box-shadow: 2px 2px 8px #999; 
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.671);  
+    border-radius: 4px;
+}
+
+#boxCnpj{
+    width: 40%;
+}
+#razaoSocial{
+    margin-left:10% ;
+    width: 50%;
+}
+#nomeFantasia{
+width: 55%;
+
+}
+#telefone{
+    margin-left: 10%;
+width: 35%;
+}
+#email{
+width: 65%;
+}
+
+#btnCadastrar{
+    background-color: rgb(71, 179, 77);  
+    color:white;
+}
+
+#btnLimpar{
+background-color: rgb(255, 250, 245);
+}
+#btnCancelar{
+    background-color: rgb(47, 78, 177);
+    color:white;
+}

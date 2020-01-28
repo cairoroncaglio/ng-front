@@ -1,0 +1,105 @@
+
+<div class="body-menu-principal">
+    <div class="layer">
+    </div>
+    <div class="menu">
+        <div class="box-menu">
+           
+            <div class="linha">
+                
+                <div class="option" [@optionsMaxMin]="option1 ? 'open' : 'closed'"  (mouseover)="option1=true" (mouseleave)="option1=false" [routerLink]="['fornecedores']">
+                    <div class="box-img">
+                        <div class="img">
+                            <button class="img-button" id="img-Fornecedor"  ></button></div>
+                    </div>
+                    <div class="box-text">
+                        <label class="text-option">Fornecedores</label>
+                    </div>
+                </div>
+
+
+                <div class="option" [@optionsMaxMin]="option2 ? 'open' : 'closed'"  (mouseover)="option2=true" (mouseleave)="option2=false">
+                    <div class="box-img">
+                        <div class="img">
+                            <button class="img-button" id="img-Categorias"></button></div>
+                    </div>
+                    <div class="box-text">
+                        <label class="text-option">Categorias</label>
+                    </div>
+                </div>
+
+
+                <div class="option" [@optionsMaxMin]="option3 ? 'open' : 'closed'"  (mouseover)="option3=true" (mouseleave)="option3=false">
+                    <div class="box-img">
+                        <div class="img">
+                            <button class="img-button" id="img-Linhas-Categorias"></button></div>
+                    </div>
+                    <div class="box-text">
+                        <label class="text-option">Linhas de Produtos</label>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="linha">
+                
+                <div class="option" [@optionsMaxMin]="option4 ? 'open' : 'closed'"  (mouseover)="option4=true" (mouseleave)="option4=false">
+                    <div class="box-img">
+                        <div class="img">
+                            <button class="img-button" id="img-Produtos"></button></div>
+                    </div>
+                    <div class="box-text">
+                        <label class="text-option">Produtos</label>
+                    </div>
+                </div>
+
+
+                <div class="option" [@optionsMaxMin]="option5 ? 'open' : 'closed'"  (mouseover)="option5=true" (mouseleave)="option5=false">
+                    <div class="box-img">
+                        <div class="img">
+                            <button class="img-button" id="img-Periodos"></button></div>
+                    </div>
+                    <div class="box-text">
+                        <label class="text-option"> Períodos</label>
+                    </div>
+                </div>
+
+
+                <div class="option" [@optionsMaxMin]="option6 ? 'open' : 'closed'"  (mouseover)="option6=true" (mouseleave)="option6=false">
+                    <div class="box-img">
+                        <div class="img">
+                            <button class="img-button" id="img-Pedidos"></button></div>
+                    </div>
+                    <div class="box-text">
+                        <label class="text-option">Pedidos</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="footer"> 
+<div class="divFooter">
+<div class="footerOptions"><h1>Dúvidas</h1></div>
+<div class="footerOptions"><h2> Central de atendimento</h2></div>
+<div class="footerOptions"><h2> 0800-0000</h2></div>
+</div>
+
+<div class="divFooter">
+    <div class="footerOptions"><h1>Sugestões</h1></div>
+    <div class="footerOptions"><h3>Dúvidas</h3></div>
+</div>
+
+<div class="divFooter">
+    <div class="footerOptions"><h1>Redes Sociais</h1></div>
+    <div class="footerOptions"><h2>Facebook</h2></div>
+    <div class="footerOptions"><h2>Twitter</h2></div>
+    <div class="footerOptions"><h2>Ambev</h2></div>
+</div>
+
+    </div>
+
+</div>

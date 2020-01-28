@@ -1,0 +1,80 @@
+<div class="body-header">
+    <div class="pre-header" *ngIf="preHeader">
+
+
+    </div>
+    <div class="header">
+
+        <div class="div-logo">
+           
+            <button class="logoAmbev"></button>
+        </div>
+
+        <div class="div-menu" (click)="animation()">
+            
+            <label class="btn-menu-header">BEM VINDO {{ name }}</label>
+            <button class="btn-menu"> </button>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="side-bar" [@sideBar]="sideBar ? 'open' : 'closed'">
+        <div class="box-side-bar" *ngIf="sideBar">
+
+            <div class="option-side-bar">
+                <div class="box-img"><button class="img-option" id="logoAmbev"></button></div>
+                <div class="box-lbl"><label class="lbl-option"></label></div>
+            </div>
+
+            <div class="option-side-bar">
+                <div class="box-img"><button class="img-option"></button></div>
+                <div class="box-lbl"><label class="lbl-option">Option</label></div>
+            </div>
+
+            <div class="option-side-bar">
+                <div class="box-img"><button class="img-option"></button></div>
+                <div class="box-lbl"><label class="lbl-option">Option</label></div>
+            </div>
+
+            <div class="option-side-bar">
+                <div class="box-img"><button class="img-option"></button></div>
+                <div class="box-lbl"><label class="lbl-option">Option</label></div>
+            </div>
+
+            <div class="option-side-bar">
+                <div class="box-img"><button class="img-option"></button></div>
+                <div class="box-lbl"><label class="lbl-option">Option</label></div>
+            </div>
+
+            <div class="option-side-bar-final">
+                <div class="main-options">
+                    <div class="box-img"><button class="img-option" id="home" [ngStyle]="{backgroundColor: btnHome==true  ? 'rgba(64, 147, 180,0.3)' : 'rgb(23,24,32)' }" (mouseover)="btnHome=true" (mouseleave)="btnHome=false" [routerLink]="['/home']">início</button></div>
+                    
+                </div>
+                <div class="main-options">
+                    <div class="box-img"><button class="img-option" id="minhaConta"
+                        [ngStyle]="{backgroundColor: btnUser==true  ? 'rgba(255, 255, 0,0.88)' : 'rgb(23,24,32)' }" (mouseover)="btnUser=true" (mouseleave)="btnUser=false">minha conta</button></div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="linha-side-bar-exit" *ngIf="sideBar">
+            <button class="btn-close" (click)="sideBar=false">
+
+            </button>
+        </div>
+
+    </div>
+</div>
+<div class="empty-body" *ngIf="preHeader">
+
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,171 @@
+<div class="body-fornecedor">
+
+    <div class="main-table">
+
+        <div class="box-tabela-fornecedor">
+            <div class="barra-inicial">
+
+                <div class="box-lbl-fornecedor"><label class="lbl-fornecedor">Fornecedores</label></div>
+            </div>
+
+            <div class="box-pesquisa-fornecedor">
+
+                <div class="box-button-pesquisa">
+                    <button class="btn-pesquisa">Buscar</button>
+                </div>
+                <div class="box-campo-pesquisa-fornecedor">
+                    <input type="text" class="campo-pesquisa-fornecedor"
+                        placeholder=" Insira Razão Social ou CNPJ do fornecedor">
+                </div>
+                <div class="box-button">
+                    <button class="btn-plus-fornecedor" (click)="openNewFornecedor()"> Adiconar novo </button>
+                </div>
+
+            </div>
+
+            <div class="tabela-fornecedor">
+
+                <table>
+                    <tr class="tr-head-table">
+                        <th class="h-col-1">EDITAR</th>
+                        <th class="h-col-2">ID</th>
+                        <th class="h-col-3">RAZÃO SOCIAL</th>
+                        <th class="h-col-4">NOME FANTASIA</th>
+                        <th class="h-col-5">CNPJ</th>
+                        <th class="h-col-6">TELEFONE</th>
+                        <th class="h-col-7">E-MAIL</th>
+                        <th class="h-col-8">EXCLUIR</th>
+                    </tr>
+
+                    <tr class="tr-body-table">
+                        <td class="col-1"><button class="iconEdit" (click)="openCloseUpdateFornecedor()"></button></td>
+                        <td class="col-2">Coluna 2</td>
+                        <td class="col-3">Coluna 3</td>
+                        <td class="col-4">Coluna 4</td>
+                        <td class="col-5">10.802.220-0001-92</td>
+                        <td class="col-6">Coluna 6</td>
+                        <td class="col-6">Coluna 7</td>
+                        <td class="col-8"><button class="iconTrash" (click)="onDelete()"></button></td>
+                    </tr>
+
+                    <tr class="tr-body-table">
+                        <td class="col-1"><button class="iconEdit"></button></td>
+                        <td class="col-2">Coluna 2</td>
+                        <td class="col-3">Coluna 3</td>
+                        <td class="col-4">Coluna 4</td>
+                        <td class="col-5">10.802.220-0001-92</td>
+                        <td class="col-6">Coluna 6</td>
+                        <td class="col-6">Coluna 7</td>
+                        <td class="col-8"><button class="iconTrash"></button></td>
+                    </tr>
+                    <tr class="tr-body-table">
+                        <td class="col-1"><button class="iconEdit"></button></td>
+                        <td class="col-2">Coluna 2</td>
+                        <td class="col-3">Coluna 3</td>
+                        <td class="col-4">Coluna 4</td>
+                        <td class="col-5">10.802.220-0001-92</td>
+                        <td class="col-6">Coluna 6</td>
+                        <td class="col-6">Coluna 7</td>
+                        <td class="col-8"><button class="iconTrash"></button></td>
+                    </tr>
+                    <tr class="tr-body-table">
+                        <td class="col-1"><button class="iconEdit"></button></td>
+                        <td class="col-2">Coluna 2</td>
+                        <td class="col-3">Coluna 3</td>
+                        <td class="col-4">Coluna 4</td>
+                        <td class="col-5">10.802.220-0001-92</td>
+                        <td class="col-6">Coluna 6</td>
+                        <td class="col-6">Coluna 7</td>
+                        <td class="col-8"><button class="iconTrash"></button></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div [@addNewFornecedor]="boxAdicionarFornecedor ? 'open' : 'closed'">
+                <div class="main-box-adicionar-novo-fornecedor" *ngIf="boxAdicionarFornecedor">
+
+                    <div class="body-update">
+
+                        <div class="container">
+
+                            <div class="box-add-fornecedor">
+                                <div class="linha-box-title">
+                                    <label class="lbl-title">Alterar Fornecedor</label>
+                                </div>
+
+                                <div class="linha-box">
+                                    <div class="box-option" id="boxCnpj">
+                                        <div class="box-lbl-option">
+                                            <label class="lbl-option">CNPJ</label>
+                                        </div>
+                                        <div class="box-input-option">
+                                            <input type="text" class="input-option" [textMask]="{mask:cnpjMask}"
+                                                placeholder="ex:. 00.000.000/0000-00"
+                                                (blur)="this.cnpj = $event.target.value" value="{{cnpj}}">
+                                        </div>
+                                    </div>
+
+                                    <div class="box-option" id="razaoSocial">
+                                        <div class="box-lbl-option">
+                                            <label class="lbl-option">Razão Social</label>
+                                        </div>
+                                        <div class="box-input-option">
+                                            <input type="text" class="input-option" placeholder="Razão Social"
+                                                (blur)="this.razaoSocial = $event.target.value" value="{{razaoSocial}}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="linha-box">
+                                    <div class="box-option" id="nomeFantasia">
+                                        <div class="box-lbl-option">
+                                            <label class="lbl-option">Nome Fantasia</label>
+                                        </div>
+                                        <div class="box-input-option">
+                                            <input type="text" class="input-option" placeholder="Nome Fantasia"
+                                                (blur)="this.nomeFantasia = $event.target.value"
+                                                value="{{nomeFantasia}}">
+                                        </div>
+                                    </div>
+                                    <div class="box-option" id="telefone">
+                                        <div class="box-lbl-option">
+                                            <label class="lbl-option">Telefone</label>
+                                        </div>
+                                        <div class="box-input-option">
+                                            <input type="text" class="input-option" [textMask]="{mask:celularMask}"
+                                                placeholder="ex:. (00)00000-0000"
+                                                (blur)="this.telefone = $event.target.value" value="{{telefone}}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="linha-box">
+                                    <div class="box-option" id="email">
+                                        <div class="box-lbl-option">
+                                            <label class="lbl-option">E-mail</label>
+                                        </div>
+                                        <div class="box-input-option">
+                                            <input type="text" class="input-option"
+                                                placeholder="fornecedor@fornecedor.com.br"
+                                                (blur)="this.email = $event.target.value" value="{{email}}">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="linha-box">
+                                    <div class="box-buttons"><button class="btnCadastro" id="btnCancelar"
+                                            (click)="openCloseUpdateFornecedor()">Fechar</button></div>
+
+                                    <div class="box-buttons"><button class="btnCadastro"
+                                            id="btnCadastrar">Alterar</button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

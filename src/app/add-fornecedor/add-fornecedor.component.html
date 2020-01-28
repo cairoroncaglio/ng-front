@@ -1,0 +1,79 @@
+<div class="body">
+
+    <div class="container">
+
+        <div class="box-add-fornecedor">
+            <div class="linha-box-title"> 
+                <label class="lbl-title">Cadastro Fornecedor</label>
+            </div>
+            
+            <div class="linha-box">
+                <div class="box-option" id="boxCnpj">
+                    <div class="box-lbl-option">
+                        <label class="lbl-option">CNPJ</label>
+                    </div>
+                    <div class="box-input-option">
+                        <input type="text" class="input-option" [textMask]="{mask:cnpjMask}" placeholder="ex:. 00.000.000/0000-00" (blur)="this.cnpj = $event.target.value" value="{{cnpj}}">
+                    </div>
+                </div>
+
+                <div class="box-option" id="razaoSocial">
+                    <div class="box-lbl-option">
+                        <label class="lbl-option">Razão Social</label>
+                    </div>
+                    <div class="box-input-option">
+                        <input type="text" class="input-option" placeholder="Razão Social" (blur)="this.razaoSocial = $event.target.value" value="{{razaoSocial}}">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="linha-box">
+                <div class="box-option" id="nomeFantasia">
+                    <div class="box-lbl-option">
+                        <label class="lbl-option">Nome Fantasia</label>
+                    </div>
+                    <div class="box-input-option">
+                        <input type="text" class="input-option" placeholder="Nome Fantasia" (blur)="this.nomeFantasia = $event.target.value" value="{{nomeFantasia}}">
+                    </div>
+                </div>
+
+                <div class="box-option" id="telefone">
+                    <div class="box-lbl-option">
+                        <label class="lbl-option">Telefone</label>
+                    </div>
+                    <div class="box-input-option">
+                        <input type="text" class="input-option" [textMask]="{mask:celularMask}" placeholder="ex:. (00)00000-0000" (blur)="this.telefone = $event.target.value" value="{{telefone}}">
+                    </div>
+                </div>
+
+            </div>
+            <div class="linha-box">
+                <div class="box-option" id="email">
+                    <div class="box-lbl-option">
+                        <label class="lbl-option">E-mail</label>
+                    </div>
+                    <div class="box-input-option">
+                        <input type="text" class="input-option" placeholder="fornecedor@fornecedor.com.br" (blur)="this.email = $event.target.value" value="{{email}}">
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="linha-box">
+               <div class ="box-buttons"><button class="btnCadastro" id="btnCancelar" (click)="closeDialogAddFornecedor()">Cancelar</button></div>
+               <div class ="box-buttons"><button class="btnCadastro" id="btnLimpar" (click)="clearFields()">Limpar Campos</button></div>
+               <div class ="box-buttons"><button class="btnCadastro" id="btnCadastrar">Cadastrar</button></div>
+
+                
+
+            </div>
+
+
+
+        </div>
+    </div>
+   
+</div>

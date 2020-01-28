@@ -1,0 +1,193 @@
+.body{
+    color:white;
+    display: flexbox;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    
+    
+}
+.backgroundLogin{
+    width: 100vw;
+    height: 140px;
+    background-image: url(/assets/img/background.png);
+}
+
+.divHead{
+    display: flexbox;
+    width: 100%;
+    height: 180px;
+    
+
+}
+.header-login{
+    background-color: rgb(26, 26, 26);
+   
+    width: 100%;
+    height: 25%;
+    
+   
+}
+.body-login{
+    margin-top: 5vh;
+     width: 100%;
+    height: 75vh;
+    display: flex;
+    
+}
+
+
+
+.box-login{
+    
+    margin: auto;
+    width: 35%;
+    height: 75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flexbox;
+    
+    
+}
+
+.linha-box-logo{
+    display: flexbox;
+    height: 20%;
+    width: 90%;
+    margin: auto;
+    font-size: 2.5vh;
+}
+
+.linha-box{
+    display: flexbox;
+    height: 25%;
+    width: 90%;   
+    margin: auto;
+    font-size: 2.5vh;
+}
+.linha-box-buttons{
+
+    display: flexbox;
+    height: 30%;
+    width: 90%;
+    margin: auto;
+    font-size: 2.5vh;
+}
+
+.box-input-linha{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    
+    
+}
+.input-linha{
+    height: 50%;
+    width: 70%;
+    margin-left: 5%;
+    border: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-position: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    -webkit-box-shadow: 2px 2px 8px #999; 
+    -moz-box-shadow: 2px 2px 8px #999;
+    box-shadow: 1px 1px 2px #999;  
+    background-color: white;
+    font-size: 3.5vh;
+    text-align: center;
+    padding-right: 10%;
+    color: rgb(87, 87, 87);
+}
+.lbl-linha{
+    color: black;
+    margin-left: 5%;
+    font-size: 100%;
+    
+    
+}
+.linha-buttons{
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+.lbm-box{
+    display: flex;
+    width: 55%;
+    height: 100%;
+}
+.divCheckbox{
+    margin-left: 10%;
+    width: 10%;
+    
+}
+.div-lbl-Checkbox{
+    width: 70%;
+}
+.senha-box{
+    width: 40%;
+    
+}
+.btnEntrar{
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    -webkit-box-shadow: 2px 2px 8px rgb(64, 147, 180); 
+    -moz-box-shadow: 2px 2px 8px rgb(64, 147, 180);
+    box-shadow: 2px 2px 8px rgb(64, 147, 180);  
+    background-color: rgb(47, 78, 177);
+    border: none;
+    color:white;
+    border-radius: 8px;
+    font-size: 3vh;
+}
+#lblEmail{
+    color: #444444;
+    
+}
+.footer{
+    width: 100vw;
+    height: 20vh;
+    
+
+}
+#lbl-lbm{
+    color: rgb(47, 78, 177);
+    
+}
+#a-ess{
+    color: #444444;
+    
+}
+#logoAmbev{
+    width: 100px;
+    height: 35px;
+    background-image: url(/assets/img/Ambev100px.png);
+    background-repeat: no-repeat;
+    background-position: 12%;
+    
+    margin-left: 7%;
+    border: none;
+    background-color: rgba(245, 245, 245, 0);
+}
+#a-duvidas{
+    font-style: bold;
+    font-size:2.5vh ;
+    margin-left: 60%;
+}
+#a-contato{
+    font-style: bold;
+    font-size:2.5vh ;
+    margin-left: 5%;
+}
+#input-email{
+    background-image: url(/assets/img/svgUser.svg);
+    
+}
+#input-senha{
+    background-image: url(/assets/img/svgPassword.svg);
+    
+}
